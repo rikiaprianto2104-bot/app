@@ -761,6 +761,7 @@ export const research = {
       venue: 'KnE Social Sciences, 493-508-493-508',
       citedBy: 1,
       year: 2023,
+      link: 'https://scholar.google.com/citations?view_op=view_citation&hl=id&user=RrjYYOoAAAAJ&citation_for_view=RrjYYOoAAAAJ:u5HHmVD_uO8C',
     },
     {
       title: 'How To Drive Satisfaction Of Simulator Software Users?',
@@ -768,22 +769,25 @@ export const research = {
       venue: 'DEAL: International Journal of Economics and Business 1 (01), 1-8',
       citedBy: null,
       year: 2023,
+      link: 'https://scholar.google.com/citations?view_op=view_citation&hl=id&user=RrjYYOoAAAAJ&citation_for_view=RrjYYOoAAAAJ:9yKSN-GCB0IC',
     },
     {
       title:
-        'Examining the Entrepreneurial Transformation of Human Resource Practices',
+        'Encouraging the Entrepreneurial Transformation of Honey Beekeepers Through Entrepreneurial Characteristics',
       authors: 'R Aprianto, NER Wuryandari',
       venue: 'Journal of Business Research, 12 (03), 22-35',
       citedBy: 1,
       year: 2023,
+      link: 'https://scholar.google.com/citations?view_op=view_citation&hl=id&user=RrjYYOoAAAAJ&citation_for_view=RrjYYOoAAAAJ:u-x6o8ySG0sC',
     },
     {
       title:
-        'The Influence of Digital Marketing on Purchase Decision Through Brand Awareness',
+        'The Effectiveness of The Use of Technology Information in Micro, Small and Medium Enterprises',
       authors: 'R Aprianto, R Ilahi',
       venue: 'Indonesian Journal of Management, 5 (2), 88-101',
       citedBy: null,
       year: 2022,
+      link: 'https://scholar.google.com/citations?view_op=view_citation&hl=id&user=RrjYYOoAAAAJ&citation_for_view=RrjYYOoAAAAJ:d1gkVwhDpl0C',
     },
   ],
 };

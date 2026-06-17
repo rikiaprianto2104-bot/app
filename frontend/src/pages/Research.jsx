@@ -61,9 +61,14 @@ const Research = () => {
                 className="py-6 border-b border-slate-100 dark:border-white/5 flex items-start justify-between gap-6"
               >
                 <div className="flex-1">
-                  <h3 className="text-base md:text-lg font-semibold text-slate-900 dark:text-white hover:text-[#0d9eff] cursor-pointer leading-snug">
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block text-base md:text-lg font-semibold text-slate-900 dark:text-white hover:text-[#0d9eff] cursor-pointer leading-snug transition-colors duration-200"
+                  >
                     {p.title}
-                  </h3>
+                  </a>
                   <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
                     {p.authors}
                   </p>

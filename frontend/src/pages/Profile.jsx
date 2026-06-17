@@ -60,13 +60,16 @@ const Profile = () => {
                 {profile.title}
               </p>
               <div className="mt-8 flex justify-center md:justify-start">
-                <button
-                  onClick={() => alert('CV download coming soon!')}
+                <a
+                  href="https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/yra1ndda_CV_Riki_Aprianto.pdf"
+                  download="CV_Riki_Aprianto.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#0d9eff] text-white font-medium shadow-lg shadow-[#0d9eff]/25 hover:bg-[#0a8de5] transition-colors duration-200"
                 >
                   <Download size={18} />
                   Download CV
-                </button>
+                </a>
               </div>
             </div>
           </div>
