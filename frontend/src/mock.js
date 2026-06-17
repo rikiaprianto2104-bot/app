@@ -212,14 +212,25 @@ export const blogPosts = [
     slug: 'geo-reshaping-search-2026',
     title: 'How GEO is Reshaping Search in 2026',
     excerpt:
-      'Generative Engine Optimization is the new frontier. Here is how to prepare your content strategy for AI-powered search.',
+      'Generative Engine Optimization (GEO) menjadi frontier baru dalam dunia pencarian digital. Seiring berkembangnya AI seperti ChatGPT, Gemini, Claude, dan Perplexity, cara pengguna menemukan informasi mengalami perubahan besar.',
     date: 'May 02, 2026',
     dateISO: '2026-05-02',
     readTime: '6 min read',
     tag: 'GEO',
     image:
       'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
-    keywords: ['GEO', 'AI search', 'SEO'],
+    keywords: [
+      'GEO',
+      'Generative Engine Optimization',
+      'AI search',
+      'SEO',
+      'ChatGPT',
+      'Gemini',
+      'Perplexity',
+      'digital marketing',
+      'search engine',
+      'answer engine',
+    ],
     author: {
       name: 'Riki Aprianto',
       role: 'AI Digital Marketing Specialist',
@@ -230,14 +241,25 @@ export const blogPosts = [
     slug: 'ai-content-workflows',
     title: 'A Practical Framework for AI-Assisted Content Workflows',
     excerpt:
-      'A step-by-step playbook to integrate LLMs into your editorial pipeline without losing the human voice.',
+      'Panduan praktis mengintegrasikan AI ke dalam workflow konten. Pelajari delapan tahap kolaborasi manusia dan AI agar produksi konten menjadi lebih cepat, relevan, dan tetap berkualitas tinggi.',
     date: 'Apr 18, 2026',
     dateISO: '2026-04-18',
     readTime: '8 min read',
     tag: 'AI Marketing',
     image:
       'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=675&fit=crop',
-    keywords: ['AI marketing', 'content workflow'],
+    keywords: [
+      'AI marketing',
+      'content workflow',
+      'LLM',
+      'ChatGPT',
+      'content strategy',
+      'editorial pipeline',
+      'SEO',
+      'GEO',
+      'AI content',
+      'workflow framework',
+    ],
     author: {
       name: 'Riki Aprianto',
       role: 'AI Digital Marketing Specialist',
@@ -405,6 +427,320 @@ export const blogContent = {
       'Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen.',
       'Gryka & Janicki (2023), Applied Sciences.',
     ],
+  },
+
+  'geo-reshaping-search-2026': {
+    intro:
+      'Generative Engine Optimization (GEO) menjadi frontier baru dalam dunia pencarian digital. Seiring berkembangnya AI seperti ChatGPT, Gemini, Claude, dan Perplexity, cara pengguna menemukan informasi mengalami perubahan besar — dari mengetik kata kunci, kini menjadi bertanya layaknya berbicara dengan asisten cerdas.',
+    sections: [
+      {
+        id: 'search-to-answer',
+        title: 'Perubahan Besar dari Search Engine ke Answer Engine',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Selama lebih dari dua dekade, SEO berfokus pada bagaimana sebuah halaman muncul di hasil pencarian. Pengguna mengetik kata kunci, lalu memilih satu di antara puluhan link biru yang tampil.',
+          },
+          {
+            type: 'p',
+            text: 'Kini pengguna semakin sering bertanya langsung kepada AI dan menerima jawaban instan yang merangkum berbagai sumber sekaligus. Search engine perlahan berubah wujud menjadi answer engine.',
+          },
+          {
+            type: 'quote',
+            text: 'Pertanyaannya bukan lagi “bagaimana muncul di halaman pertama Google”, tapi “bagaimana dikutip oleh AI ketika menjawab pengguna”.',
+          },
+        ],
+      },
+      {
+        id: 'apa-itu-geo',
+        title: 'Apa Itu GEO?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Generative Engine Optimization (GEO) adalah praktik mengoptimalkan konten agar lebih mudah dipahami, dikutip, dan direkomendasikan oleh sistem AI generatif. Berbeda dengan SEO klasik yang menargetkan crawler dan algoritma ranking, GEO menargetkan model bahasa besar (LLM) yang menyusun jawaban dari berbagai sumber.',
+          },
+          {
+            type: 'highlight',
+            text: 'GEO bukan tentang menipu AI. GEO adalah tentang membuat konten yang memang layak dikutip karena jelas, akurat, dan terstruktur dengan baik.',
+          },
+        ],
+      },
+      {
+        id: 'mengapa-penting',
+        title: 'Mengapa GEO Penting di Tahun 2026?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Ada tiga alasan utama mengapa GEO menjadi salah satu prioritas strategi konten di tahun 2026:',
+          },
+          {
+            type: 'ol',
+            items: [
+              'Pengguna semakin mengandalkan AI sebagai pintu masuk utama informasi, terutama untuk pertanyaan kompleks.',
+              'Traffic organik mengalami perubahan karena sebagian klik “habis” di level jawaban AI sebelum sampai ke website.',
+              'Kredibilitas menjadi faktor utama. AI cenderung memilih sumber yang otoritatif dan konsisten.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'cara-ai-memilih',
+        title: 'Bagaimana AI Memilih Sumber Informasi?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'AI generatif tidak memilih sumber secara acak. Ada pola yang konsisten ketika sebuah konten dianggap layak dikutip:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Relevan dengan intent pertanyaan, bukan sekadar mengandung kata kunci.',
+              'Memiliki struktur yang jelas — heading, list, dan paragraf yang ringkas.',
+              'Didukung otoritas, baik dari penulis maupun domain.',
+              'Didasarkan pada data dan referensi yang dapat diverifikasi.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'strategi-geo',
+        title: 'Strategi GEO yang Harus Diterapkan',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Berikut adalah pendekatan praktis yang dapat segera diterapkan oleh tim konten dan SEO:',
+          },
+          {
+            type: 'ol',
+            items: [
+              'Buat konten yang menjawab pertanyaan pengguna secara langsung dan tuntas.',
+              'Fokus pada topical authority — bahas satu topik secara mendalam, bukan dangkal di banyak topik.',
+              'Gunakan FAQ untuk menangkap intent berbentuk pertanyaan.',
+              'Bangun entity yang jelas: siapa penulisnya, siapa brand-nya, dan apa keahliannya.',
+              'Sertakan data, statistik, dan sumber primer agar konten lebih mudah dirujuk AI.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'apakah-seo-mati',
+        title: 'Apakah SEO Akan Mati?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Pertanyaan ini sering muncul setiap kali ada teknologi baru. Jawabannya tetap sama: tidak. GEO bukan pengganti SEO, melainkan evolusi dari SEO di era AI.',
+          },
+          {
+            type: 'p',
+            text: 'SEO tetap menjadi fondasi — tanpa fondasi teknis dan konten yang baik, AI pun sulit menemukan dan memahami halaman Anda. GEO membangun lapisan baru di atas fondasi tersebut.',
+          },
+        ],
+      },
+      {
+        id: 'masa-depan',
+        title: 'Masa Depan Pencarian Ada pada Kepercayaan',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Di tengah membanjirnya konten yang diproduksi secara otomatis, faktor pembeda utama bukan lagi kuantitas, melainkan kepercayaan. Konten terbaik adalah konten yang membantu pengguna, kredibel, dan dapat dipercaya.',
+          },
+          {
+            type: 'quote',
+            text: 'Algoritma boleh berubah, model AI boleh berkembang, tapi kepercayaan tetap menjadi mata uang utama dalam dunia pencarian.',
+          },
+        ],
+      },
+    ],
+    conclusion:
+      'GEO menjadi salah satu perkembangan paling penting dalam digital marketing tahun 2026. Website perlu membangun konten yang terstruktur, berbasis otoritas, dan mudah dipahami AI. Brand yang berhasil bukanlah yang paling banyak memproduksi konten, melainkan yang paling layak dipercaya dan dirujuk — baik oleh manusia maupun oleh mesin.',
+  },
+
+  'ai-content-workflows': {
+    intro:
+      'Perkembangan Artificial Intelligence (AI) telah mengubah cara organisasi membuat dan mengelola konten. Kehadiran Large Language Models (LLMs) seperti ChatGPT, Gemini, Claude, dan berbagai AI generatif lainnya memungkinkan proses produksi konten menjadi lebih cepat, efisien, dan terukur. Namun, tanpa framework yang jelas, AI justru dapat menghasilkan konten yang dangkal dan kehilangan suara manusia.',
+    sections: [
+      {
+        id: 'mengapa-berubah',
+        title: 'Mengapa Workflow Konten Perlu Berubah?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Proses produksi konten tradisional membutuhkan banyak tahapan mulai dari riset, brainstorming, outline, drafting, editing, hingga distribusi. Setiap tahap menuntut waktu, tenaga, dan koordinasi yang tidak sedikit.',
+          },
+          {
+            type: 'p',
+            text: 'AI mampu mempercepat sebagian besar aktivitas tersebut, tetapi tetap membutuhkan strategi dan pengawasan manusia agar hasilnya konsisten dengan identitas merek dan kebutuhan audiens.',
+          },
+        ],
+      },
+      {
+        id: 'tahap-1',
+        title: 'Tahap 1: Content Strategy (Human-Led)',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Strategi tetap harus dipimpin oleh manusia. AI hanya alat — ia tidak memahami konteks bisnis Anda kecuali Anda yang merumuskannya.',
+          },
+          {
+            type: 'list',
+            items: [
+              'Tentukan target audiens dan persona yang spesifik.',
+              'Tetapkan tujuan konten — awareness, consideration, atau conversion.',
+              'Petakan customer journey dan touchpoint yang ingin dioptimalkan.',
+              'Tetapkan KPI yang ingin dicapai, baik kuantitatif maupun kualitatif.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'tahap-2',
+        title: 'Tahap 2: Research & Ideation (AI-Assisted)',
+        blocks: [
+          {
+            type: 'p',
+            text: 'AI dapat membantu brainstorming ide artikel, mengidentifikasi tren, menyusun content calendar, dan menemukan pertanyaan yang sering diajukan pengguna. Tugas manusia adalah memvalidasi mana ide yang sejalan dengan strategi.',
+          },
+        ],
+      },
+      {
+        id: 'tahap-3',
+        title: 'Tahap 3: Outline Development (Human + AI)',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Gunakan AI untuk membantu menyusun struktur artikel seperti H1, H2, H3, dan FAQ. Editor memastikan struktur sesuai kebutuhan audiens dan tidak generik.',
+          },
+          {
+            type: 'highlight',
+            text: 'Outline yang baik = artikel yang baik. Investasikan waktu pada tahap ini, dan tahap berikutnya akan jauh lebih cepat.',
+          },
+        ],
+      },
+      {
+        id: 'tahap-4',
+        title: 'Tahap 4: Draft Generation (AI-Led)',
+        blocks: [
+          {
+            type: 'p',
+            text: 'AI menghasilkan draft awal yang mempercepat proses penulisan. Namun draft tetap harus dianggap sebagai bahan mentah yang perlu disempurnakan, bukan output final.',
+          },
+        ],
+      },
+      {
+        id: 'tahap-5',
+        title: 'Tahap 5: Human Review & Fact Checking',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Verifikasi fakta, validasi sumber, dan sesuaikan gaya bahasa dengan identitas merek. Tahap ini sangat penting untuk menjaga kualitas dan kredibilitas konten.',
+          },
+          {
+            type: 'list',
+            items: [
+              'Cross-check semua angka, statistik, dan klaim.',
+              'Tambahkan insight personal, contoh kasus, atau pengalaman nyata.',
+              'Hapus kalimat-kalimat generik yang khas AI.',
+              'Sesuaikan tone of voice dengan brand guidelines.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'tahap-6',
+        title: 'Tahap 6: SEO dan GEO Optimization',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Konten harus dioptimalkan untuk Search Engine Optimization (SEO) dan Generative Engine Optimization (GEO) agar mudah ditemukan oleh mesin pencari sekaligus mudah dikutip oleh AI generatif.',
+          },
+        ],
+      },
+      {
+        id: 'tahap-7',
+        title: 'Tahap 7: Publishing & Distribution',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Satu artikel dapat diubah menjadi berbagai format agar nilai distribusinya maksimal:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Posting LinkedIn dalam format storytelling.',
+              'Carousel Instagram dengan poin-poin kunci.',
+              'Newsletter mingguan untuk audiens email.',
+              'Script video pendek untuk YouTube Shorts atau TikTok.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'tahap-8',
+        title: 'Tahap 8: Performance Analysis',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Evaluasi traffic, engagement, conversion, dan AI visibility untuk memahami efektivitas strategi konten. Gunakan data ini untuk menyempurnakan workflow di siklus berikutnya.',
+          },
+        ],
+      },
+      {
+        id: 'kesalahan',
+        title: 'Kesalahan yang Harus Dihindari',
+        blocks: [
+          {
+            type: 'ol',
+            items: [
+              'Mengandalkan AI sepenuhnya tanpa pengawasan manusia.',
+              'Melewatkan fact-checking sehingga konten berisi informasi yang tidak akurat.',
+              'Hanya fokus pada kuantitas konten dan mengabaikan kualitas.',
+              'Tidak menyesuaikan output AI dengan brand voice yang unik.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'framework-singkat',
+        title: 'Framework Singkat',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Ringkasan alur kerja yang dapat segera diadopsi tim konten Anda:',
+          },
+          {
+            type: 'highlight',
+            text: 'Human → AI → Human → AI → Human: Strategy, Research, Outline, Draft, Review, SEO/GEO, Distribution, Analysis.',
+          },
+          {
+            type: 'p',
+            text: 'Pola bergantian ini memastikan kecepatan AI dimanfaatkan secara maksimal tanpa mengorbankan kualitas, kreativitas, dan strategi yang hanya bisa dihadirkan manusia.',
+          },
+        ],
+      },
+      {
+        id: 'faq',
+        title: 'FAQ',
+        blocks: [
+          { type: 'h3', text: 'Apakah AI dapat menggantikan content writer?' },
+          {
+            type: 'p',
+            text: 'Tidak. AI membantu proses produksi, tetapi kreativitas, empati, dan strategi tetap membutuhkan manusia. Content writer berevolusi menjadi content strategist dan editor.',
+          },
+          { type: 'h3', text: 'Apa manfaat utama AI dalam workflow konten?' },
+          {
+            type: 'p',
+            text: 'Meningkatkan produktivitas, mempercepat riset, brainstorming ide, dan pembuatan draft awal sehingga tim dapat fokus pada pekerjaan bernilai tinggi.',
+          },
+          { type: 'h3', text: 'Apakah konten AI aman untuk SEO?' },
+          {
+            type: 'p',
+            text: 'Ya, selama berkualitas tinggi dan telah melalui review manusia. Mesin pencari menilai kualitas dan helpfulness, bukan asal-usul konten.',
+          },
+        ],
+      },
+    ],
+    conclusion:
+      'AI bukan pengganti manusia, melainkan alat yang membantu menghasilkan konten yang lebih cepat, lebih relevan, dan lebih bernilai. Framework yang baik memastikan AI dan manusia bekerja saling melengkapi — bukan saling menggantikan. Tim yang berhasil di era ini adalah tim yang berani memadukan disiplin manusia dengan skala yang dimungkinkan oleh AI.',
   },
 };
 

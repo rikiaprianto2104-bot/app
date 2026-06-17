@@ -400,24 +400,26 @@ const BlogPost = () => {
             </section>
 
             {/* References */}
-            <section className="mt-14">
-              <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
-                Referensi Utama
-              </h2>
-              <ol className="mt-6 space-y-3">
-                {content.references.map((r, i) => (
-                  <li
-                    key={i}
-                    className="flex gap-4 text-slate-600 dark:text-slate-400 text-[15px] leading-relaxed"
-                  >
-                    <span className="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-300 text-xs font-semibold flex items-center justify-center mt-0.5">
-                      {i + 1}
-                    </span>
-                    <span>{r}</span>
-                  </li>
-                ))}
-              </ol>
-            </section>
+            {content.references && content.references.length > 0 && (
+              <section className="mt-14">
+                <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+                  Referensi Utama
+                </h2>
+                <ol className="mt-6 space-y-3">
+                  {content.references.map((r, i) => (
+                    <li
+                      key={i}
+                      className="flex gap-4 text-slate-600 dark:text-slate-400 text-[15px] leading-relaxed"
+                    >
+                      <span className="flex-shrink-0 w-7 h-7 rounded-full bg-slate-100 dark:bg-white/5 text-slate-500 dark:text-slate-300 text-xs font-semibold flex items-center justify-center mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{r}</span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
 
             {/* Share */}
             <section className="mt-14 pt-8 border-t border-slate-200 dark:border-white/5">
