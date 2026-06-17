@@ -143,7 +143,7 @@ export const achievements = [
       'Secured third place in a national scientific writing competition focused on accounting and finance.',
     link: 'https://www.instagram.com/p/CXi4kM3vnGM/',
     image:
-      'https://images.unsplash.com/photo-1606159068539-43f36b99d1b2?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/kudy3dn7_lktin-accfest-ikopin-3rd-place-2022.jpg',
   },
   {
     title: 'Gold Medal TEC UNJ',
@@ -152,7 +152,7 @@ export const achievements = [
       'Awarded a gold medal in the Technology Entrepreneurship Competition (TEC) organized by a leading university.',
     link: 'https://www.instagram.com/p/CWfPcpnLsxv/',
     image:
-      'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/nua3x9rz_gold-medal-unj.jpg',
   },
   {
     title: 'KIBM Participant',
@@ -161,7 +161,7 @@ export const achievements = [
       'Participated in the Indonesian Student Entrepreneurship Competition (KIBM) program.',
     link: 'https://www.instagram.com/tv/CGi4i5UASMh/',
     image:
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/ghi6obka_kibm-ministry-of-education-2020.jpg',
   },
 ];
 
