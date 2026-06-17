@@ -116,7 +116,7 @@ export const achievements = [
       'Awarded as the best graduate for academic excellence and active involvement in campus activities.',
     link: 'https://undira.ac.id/read/115/',
     image:
-      'https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/qn0v9i1h_best-graduate-2023.jpg',
   },
   {
     title: 'Runner Up LKTIN RWrC#10 UNY',
@@ -125,7 +125,7 @@ export const achievements = [
       'Achieved second place in a national scientific writing competition held by a prominent state university.',
     link: 'https://undira.ac.id/read/53/',
     image:
-      'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/wbc8ci1i_lktin-rwrc10-2nd-place-2023.jpg',
   },
   {
     title: 'P2MW Participant',
@@ -134,7 +134,7 @@ export const achievements = [
       'Selected as a participant in the Student Entrepreneurship Program (P2MW) by the Ministry of Education and Culture.',
     link: 'https://www.instagram.com/p/CmVvEVmBLCf/',
     image:
-      'https://images.unsplash.com/photo-1559223607-a43f990c692c?w=900&h=600&fit=crop',
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/zbwoerox_p2mw-ministry-of-education-2022.jpg',
   },
   {
     title: '3rd Place LKTIN ACCFEST IKOPIN',
