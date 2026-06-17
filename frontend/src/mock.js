@@ -42,39 +42,138 @@ export const skills = [
 
 export const experiences = [
   {
-    role: 'AI Digital Marketing Specialist',
-    company: 'Independent Consultant',
-    period: '2023 — Present',
+    role: 'IT Manager',
+    badge: 'Current',
+    period: 'Oct 2023 - Present',
+    location: 'Yogyakarta',
+    company: null,
     description:
-      'Designing AI-assisted SEO and GEO strategies for SMEs across Southeast Asia. Built content workflows that increased organic traffic by 180% on average.',
+      "I am responsible for overseeing the development process of the Warehouse System by a third-party vendor to ensure it meets business needs and company standards, coordinating with the warehouse team to gather system requirements while ensuring the vendor understands the operational flow correctly. In addition, I monitor project progress, from reviewing designs, features, and timelines to testing the vendor's work. I also compile requirements documentation, provide technical input, and ensure that the system is ready to be implemented and used by the operations team.",
   },
   {
-    role: 'Digital Marketing Lead',
-    company: 'Tech Startup',
-    period: '2021 — 2023',
+    role: 'Graphic Designer',
+    period: 'May 2023 - Oct 2023',
+    location: 'Arcadia by Horison Mangga Dua Hotel, Jakarta',
     description:
-      'Led performance marketing initiatives across paid, social, and content channels. Owned analytics stack and attribution modelling.',
+      'I design various visual needs for hotels, such as flyers, posters, restaurant menus, digital banners, and promotional materials in accordance with hotel branding standards. I also manage and develop hotel social media content (Instagram, Facebook, TikTok), from content creation and scheduling to copywriting.',
   },
   {
-    role: 'Marketing Analyst',
-    company: 'Agency',
-    period: '2019 — 2021',
+    role: 'Graphic Designer Freelancer',
+    period: 'Jan 2022 - Mar 2024',
+    location: "Yayasan Kitabati Samudra Al-Qur'an, Jakarta",
     description:
-      'Conducted market research, campaign analytics, and consumer behavior studies for FMCG and e-commerce clients.',
+      'I designed the layout of the Al-Quran manuscript, including the text layout, margins, surah headings, and aesthetic elements in accordance with the rules of Al-Quran writing, as well as creating and developing ornaments, motifs, and decorative illustrations.',
+  },
+  {
+    role: 'President Director',
+    period: 'Sep 2022 - May 2023',
+    location: 'PT Arto Cipta Solusindo, Jakarta',
+    description:
+      'I lead and manage all company operations, from strategic planning and service development to creative team management, as well as overseeing the graphic design production process to ensure visual quality, timeliness, and suitability to client needs.',
+  },
+  {
+    role: 'Operator Produksi',
+    period: 'Aug 2018 - May 2022',
+    location: 'RS Bordir Komputer',
+    description:
+      'I operate computerized embroidery machines accurately according to the design and specifications of the order, performing initial machine settings such as threading, needle selection, speed determination, and embroidery area settings.',
   },
 ];
 
 export const education = [
   {
-    degree: 'Master in Management',
-    school: 'Universitas',
-    period: '2021 — 2023',
+    degree: 'Master of Management (Cand M.M.)',
+    badge: 'Current',
+    period: '2025 - Present',
+    school: 'UPN "Veteran" Yogyakarta',
+    description:
+      'Continuing higher education to deepen strategic management and business leadership skills.',
   },
   {
-    degree: 'Bachelor in Management',
-    school: 'Universitas',
-    period: '2015 — 2019',
+    degree: 'Bachelor of Management (S.M.)',
+    period: '2019 - 2023',
+    school: 'Universitas Dian Nusantara',
+    description:
+      'Focused on marketing management, organizational behavior, and business strategy.',
   },
+];
+
+export const organizations = [
+  {
+    role: 'Chairman of the Management Student Association (HMM)',
+    period: '2020 - 2021',
+    org: 'Universitas Dian Nusantara',
+    description:
+      'Led the student association, organized various academic and non-academic events, and represented the student body in university forums.',
+  },
+];
+
+export const achievements = [
+  {
+    title: 'Best Graduate 2023',
+    year: 2023,
+    description:
+      'Awarded as the best graduate for academic excellence and active involvement in campus activities.',
+    link: 'https://undira.ac.id/read/115/',
+    image:
+      'https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=900&h=600&fit=crop',
+  },
+  {
+    title: 'Runner Up LKTIN RWrC#10 UNY',
+    year: 2023,
+    description:
+      'Achieved second place in a national scientific writing competition held by a prominent state university.',
+    link: 'https://undira.ac.id/read/53/',
+    image:
+      'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=900&h=600&fit=crop',
+  },
+  {
+    title: 'P2MW Participant',
+    year: 2022,
+    description:
+      'Selected as a participant in the Student Entrepreneurship Program (P2MW) by the Ministry of Education and Culture.',
+    link: 'https://www.instagram.com/p/CmVvEVmBLCf/',
+    image:
+      'https://images.unsplash.com/photo-1559223607-a43f990c692c?w=900&h=600&fit=crop',
+  },
+  {
+    title: '3rd Place LKTIN ACCFEST IKOPIN',
+    year: 2022,
+    description:
+      'Secured third place in a national scientific writing competition focused on accounting and finance.',
+    link: 'https://www.instagram.com/p/CXi4kM3vnGM/',
+    image:
+      'https://images.unsplash.com/photo-1606159068539-43f36b99d1b2?w=900&h=600&fit=crop',
+  },
+  {
+    title: 'Gold Medal TEC UNJ',
+    year: 2021,
+    description:
+      'Awarded a gold medal in the Technology Entrepreneurship Competition (TEC) organized by a leading university.',
+    link: 'https://www.instagram.com/p/CWfPcpnLsxv/',
+    image:
+      'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=900&h=600&fit=crop',
+  },
+  {
+    title: 'KIBM Participant',
+    year: 2020,
+    description:
+      'Participated in the Indonesian Student Entrepreneurship Competition (KIBM) program.',
+    link: 'https://www.instagram.com/tv/CGi4i5UASMh/',
+    image:
+      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&h=600&fit=crop',
+  },
+];
+
+export const skillsCompetencies = [
+  { name: 'SEO, GEO & SEM', level: 95 },
+  { name: 'Google Analytics', level: 92 },
+  { name: 'Content Marketing', level: 90 },
+  { name: 'Data Analysis', level: 90 },
+  { name: 'Social Media Marketing', level: 88 },
+  { name: 'AI Digital Marketing', level: 87 },
+  { name: 'Artificial Intelligence', level: 85 },
+  { name: 'Marketing Automation', level: 83 },
 ];
 
 export const blogPosts = [

@@ -1,11 +1,45 @@
 import React from 'react';
-import { Download, Briefcase, GraduationCap, Mail, Phone, MapPin } from 'lucide-react';
-import { profile, experiences, education } from '../mock';
+import {
+  Download,
+  Briefcase,
+  GraduationCap,
+  Users,
+  Award,
+  ExternalLink,
+  Trophy,
+  MapPin,
+  Sparkles,
+} from 'lucide-react';
+import {
+  profile,
+  experiences,
+  education,
+  organizations,
+  achievements,
+  skillsCompetencies,
+} from '../mock';
+
+const SectionHeading = ({ icon: Icon, title }) => (
+  <div>
+    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white flex items-center gap-3 tracking-tight">
+      {Icon && <Icon size={28} className="text-[#0d9eff]" />}
+      {title}
+    </h2>
+    <div className="mt-3 h-1 w-16 rounded-full bg-[#0d9eff]" />
+  </div>
+);
+
+const TimelineItem = ({ children }) => (
+  <div className="relative">
+    <span className="absolute -left-[33px] md:-left-[37px] top-1.5 w-4 h-4 rounded-full bg-[#0d9eff] ring-4 ring-white dark:ring-[#0b1220]" />
+    {children}
+  </div>
+);
 
 const Profile = () => {
   return (
     <div>
-      {/* Header */}
+      {/* 1. HERO */}
       <section className="bg-gradient-to-b from-[#f4faff] to-white dark:from-[#0b1220] dark:to-[#0b1220]">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
@@ -39,86 +73,179 @@ const Profile = () => {
         </div>
       </section>
 
-      {/* About */}
+      {/* ABOUT ME */}
       <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
-          About Me
-        </h2>
-        <div className="mt-3 h-1 w-16 rounded-full bg-[#0d9eff]" />
-        <p className="mt-8 text-slate-500 dark:text-slate-400 text-base md:text-lg leading-loose max-w-3xl">
+        <SectionHeading title="About Me" />
+        <p className="mt-8 text-slate-500 dark:text-slate-400 text-base md:text-lg leading-loose max-w-3xl text-justify hyphens-auto">
           {profile.about}
         </p>
-
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl">
-          {[
-            { icon: Mail, label: 'Email', value: profile.email },
-            { icon: Phone, label: 'Phone', value: profile.phone },
-            { icon: MapPin, label: 'Location', value: profile.location },
-          ].map((c) => (
-            <div
-              key={c.label}
-              className="p-5 rounded-2xl border border-slate-200 dark:border-white/5 bg-white dark:bg-white/[0.03]"
-            >
-              <div className="w-10 h-10 rounded-lg bg-[#eaf6ff] dark:bg-[#0d9eff]/10 flex items-center justify-center text-[#0d9eff]">
-                <c.icon size={18} />
-              </div>
-              <p className="mt-3 text-xs uppercase tracking-wider text-slate-400">
-                {c.label}
-              </p>
-              <p className="mt-1 text-sm font-medium text-slate-800 dark:text-slate-100 break-words">
-                {c.value}
-              </p>
-            </div>
-          ))}
-        </div>
       </section>
 
-      {/* Experience */}
+      {/* 2. WORK EXPERIENCE */}
       <section className="bg-slate-50 dark:bg-white/[0.02] py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
-            <Briefcase size={28} className="text-[#0d9eff]" />
-            Experience
-          </h2>
-          <div className="mt-3 h-1 w-16 rounded-full bg-[#0d9eff]" />
+          <SectionHeading icon={Briefcase} title="Work Experience" />
 
-          <div className="mt-10 relative pl-6 md:pl-8 border-l-2 border-slate-200 dark:border-white/10 space-y-10">
+          <div className="mt-10 relative pl-6 md:pl-8 border-l-2 border-slate-200 dark:border-white/10 space-y-12">
             {experiences.map((e, i) => (
-              <div key={i} className="relative">
-                <span className="absolute -left-[33px] md:-left-[37px] top-1.5 w-4 h-4 rounded-full bg-[#0d9eff] ring-4 ring-white dark:ring-[#0b1220]" />
-                <p className="text-sm text-[#0d9eff] font-medium">{e.period}</p>
-                <h3 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">
-                  {e.role}
-                </h3>
-                <p className="text-slate-500 dark:text-slate-400">{e.company}</p>
-                <p className="mt-2 text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl">
+              <TimelineItem key={i}>
+                <div className="flex flex-wrap items-center gap-3">
+                  <h3 className="text-lg md:text-xl font-semibold text-slate-900 dark:text-white">
+                    {e.role}
+                  </h3>
+                  {e.badge && (
+                    <span className="text-xs font-semibold text-[#0d9eff] bg-[#eaf6ff] dark:bg-[#0d9eff]/10 px-2.5 py-1 rounded-full">
+                      {e.badge}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-2 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-x-2">
+                  <span className="text-[#0d9eff] font-medium">{e.period}</span>
+                  {e.location && (
+                    <>
+                      <span>·</span>
+                      <span className="inline-flex items-center gap-1">
+                        <MapPin size={13} /> {e.location}
+                      </span>
+                    </>
+                  )}
+                </p>
+                <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl text-justify hyphens-auto">
                   {e.description}
                 </p>
-              </div>
+              </TimelineItem>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Education */}
+      {/* 3. EDUCATION + ORGANIZATION */}
       <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white flex items-center gap-3">
-          <GraduationCap size={30} className="text-[#0d9eff]" />
-          Education
-        </h2>
-        <div className="mt-3 h-1 w-16 rounded-full bg-[#0d9eff]" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-14">
+          {/* Education */}
+          <div>
+            <SectionHeading icon={GraduationCap} title="Education" />
+            <div className="mt-10 relative pl-6 border-l-2 border-slate-200 dark:border-white/10 space-y-10">
+              {education.map((e, i) => (
+                <TimelineItem key={i}>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                      {e.degree}
+                    </h3>
+                    {e.badge && (
+                      <span className="text-xs font-semibold text-[#0d9eff] bg-[#eaf6ff] dark:bg-[#0d9eff]/10 px-2.5 py-1 rounded-full">
+                        {e.badge}
+                      </span>
+                    )}
+                  </div>
+                  <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+                    <span className="text-[#0d9eff] font-medium">
+                      {e.period}
+                    </span>{' '}
+                    · {e.school}
+                  </p>
+                  {e.description && (
+                    <p className="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed text-justify hyphens-auto">
+                      {e.description}
+                    </p>
+                  )}
+                </TimelineItem>
+              ))}
+            </div>
+          </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {education.map((e, i) => (
-            <div
-              key={i}
-              className="p-6 rounded-2xl border border-slate-200 dark:border-white/5 bg-white dark:bg-white/[0.03] hover:border-[#0d9eff]/60 transition-colors duration-200"
-            >
-              <p className="text-sm text-[#0d9eff] font-medium">{e.period}</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">
-                {e.degree}
-              </h3>
-              <p className="mt-1 text-slate-500 dark:text-slate-400">{e.school}</p>
+          {/* Organization */}
+          <div>
+            <SectionHeading icon={Users} title="Organization" />
+            <div className="mt-10 relative pl-6 border-l-2 border-slate-200 dark:border-white/10 space-y-10">
+              {organizations.map((o, i) => (
+                <TimelineItem key={i}>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                    {o.role}
+                  </h3>
+                  <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
+                    <span className="text-[#0d9eff] font-medium">
+                      {o.period}
+                    </span>{' '}
+                    · {o.org}
+                  </p>
+                  <p className="mt-3 text-slate-600 dark:text-slate-300 leading-relaxed text-justify hyphens-auto">
+                    {o.description}
+                  </p>
+                </TimelineItem>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. ACHIEVEMENTS */}
+      <section className="bg-slate-50 dark:bg-white/[0.02] py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <SectionHeading icon={Trophy} title="Achievements" />
+
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {achievements.map((a, i) => (
+              <article
+                key={i}
+                className="group rounded-2xl overflow-hidden border border-slate-200 dark:border-white/5 bg-white dark:bg-white/[0.03] hover:border-[#0d9eff]/60 hover:shadow-xl hover:shadow-[#0d9eff]/10 hover:-translate-y-1 transition-all duration-300 flex flex-col"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={a.image}
+                    alt={a.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className="absolute bottom-3 left-3 text-xs font-semibold text-white bg-[#0d9eff] px-3 py-1 rounded-full shadow-lg">
+                    {a.year}
+                  </span>
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-white leading-snug">
+                    {a.title}
+                  </h3>
+                  <p className="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-relaxed text-justify hyphens-auto flex-1">
+                    {a.description}
+                  </p>
+                  <a
+                    href={a.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[#0d9eff] hover:underline"
+                  >
+                    <Award size={16} />
+                    View Certificate
+                    <ExternalLink
+                      size={14}
+                      className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-300"
+                    />
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. SKILLS & COMPETENCIES */}
+      <section className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
+        <SectionHeading icon={Sparkles} title="Skills & Competencies" />
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+          {skillsCompetencies.map((s) => (
+            <div key={s.name}>
+              <div className="flex items-center justify-between text-sm font-medium">
+                <span className="text-slate-800 dark:text-slate-100">
+                  {s.name}
+                </span>
+                <span className="text-[#0d9eff] font-semibold">{s.level}%</span>
+              </div>
+              <div className="mt-3 h-2.5 rounded-full bg-slate-200 dark:bg-white/5 overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-[#0d9eff] transition-all duration-700"
+                  style={{ width: `${s.level}%` }}
+                />
+              </div>
             </div>
           ))}
         </div>
