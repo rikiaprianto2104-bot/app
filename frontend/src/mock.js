@@ -80,32 +80,234 @@ export const education = [
 export const blogPosts = [
   {
     id: 1,
-    title: 'How GEO is Reshaping Search in 2025',
+    slug: 'manipulasi-review-rating-google-maps-etika-bisnis',
+    title:
+      'Manipulasi Review dan Rating di Google Maps: Persoalan Etika Bisnis dalam Kepercayaan Digital',
     excerpt:
-      'Generative Engine Optimization is the new frontier. Here is how to prepare your content strategy for AI-powered search.',
-    date: 'Jul 02, 2025',
-    readTime: '6 min read',
-    tag: 'GEO',
+      'Artikel ini membahas praktik manipulasi review dan rating di Google Maps sebagai persoalan etika bisnis yang memengaruhi kepercayaan konsumen, reputasi digital, dan persaingan usaha yang sehat.',
+    date: 'Jun 17, 2026',
+    dateISO: '2026-06-17',
+    readTime: '7 min read',
+    tag: 'Etika Bisnis',
+    image:
+      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/8144n02d_ChatGPT%20Image%2017%20Jun%202026%2C%2020.09.50_11zon.jpg',
+    keywords: [
+      'etika bisnis',
+      'manipulasi review',
+      'fake review',
+      'google maps',
+      'rating google',
+      'reputasi digital',
+      'kepercayaan konsumen',
+      'etika pemasaran',
+      'ulasan palsu',
+      'bisnis digital',
+    ],
+    author: {
+      name: 'Riki Aprianto',
+      role: "AI Digital Marketing Specialist & Master's Student in Marketing Management",
+    },
   },
   {
     id: 2,
-    title: 'A Practical Framework for AI-Assisted Content Workflows',
+    slug: 'geo-reshaping-search-2026',
+    title: 'How GEO is Reshaping Search in 2026',
     excerpt:
-      'A step-by-step playbook to integrate LLMs into your editorial pipeline without losing the human voice.',
-    date: 'Jun 18, 2025',
-    readTime: '8 min read',
-    tag: 'AI Marketing',
+      'Generative Engine Optimization is the new frontier. Here is how to prepare your content strategy for AI-powered search.',
+    date: 'May 02, 2026',
+    dateISO: '2026-05-02',
+    readTime: '6 min read',
+    tag: 'GEO',
+    image:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
+    keywords: ['GEO', 'AI search', 'SEO'],
+    author: {
+      name: 'Riki Aprianto',
+      role: 'AI Digital Marketing Specialist',
+    },
   },
   {
     id: 3,
-    title: 'Data-Driven Social Strategy: From Vanity to Value',
+    slug: 'ai-content-workflows',
+    title: 'A Practical Framework for AI-Assisted Content Workflows',
     excerpt:
-      'Replace likes and impressions with engagement quality, attribution, and revenue contribution metrics.',
-    date: 'May 22, 2025',
-    readTime: '5 min read',
-    tag: 'Analytics',
+      'A step-by-step playbook to integrate LLMs into your editorial pipeline without losing the human voice.',
+    date: 'Apr 18, 2026',
+    dateISO: '2026-04-18',
+    readTime: '8 min read',
+    tag: 'AI Marketing',
+    image:
+      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=675&fit=crop',
+    keywords: ['AI marketing', 'content workflow'],
+    author: {
+      name: 'Riki Aprianto',
+      role: 'AI Digital Marketing Specialist',
+    },
   },
 ];
+
+// Full article content keyed by slug.
+// Each section has id (used for TOC and anchor), heading, and a list of blocks.
+// Block types: 'p' (paragraph), 'list', 'ol', 'quote', 'highlight', 'image', 'h3'.
+export const blogContent = {
+  'manipulasi-review-rating-google-maps-etika-bisnis': {
+    intro:
+      'Di era digital, reputasi bisnis tidak hanya dibangun dari kualitas produk atau pelayanan secara langsung, tetapi juga dari jejak digital yang terlihat oleh calon konsumen. Salah satu bentuk jejak digital yang sangat berpengaruh adalah review dan rating di Google Maps. Sebelum seseorang memilih restoran, hotel, bengkel, klinik, toko, atau jasa tertentu, banyak dari mereka melihat rating bintang, membaca komentar pelanggan, lalu menjadikannya sebagai dasar keputusan.',
+    inlineImage: {
+      src: 'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/8144n02d_ChatGPT%20Image%2017%20Jun%202026%2C%2020.09.50_11zon.jpg',
+      caption:
+        'Ilustrasi tampilan ulasan bisnis di Google Maps yang menjadi dasar keputusan konsumen.',
+    },
+    sections: [
+      {
+        id: 'fenomena',
+        title: 'Fenomena Manipulasi Review di Google Maps',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Manipulasi review menjadi praktik yang semakin umum dilakukan oleh pelaku usaha tertentu demi mendongkrak reputasi digital mereka. Bentuk-bentuk manipulasinya antara lain:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Membeli review bintang lima dari penyedia jasa ulasan.',
+              'Meminta karyawan atau keluarga menulis ulasan positif tanpa pengalaman nyata.',
+              'Memberi imbalan agar pelanggan menulis review dengan narasi tertentu.',
+              'Menekan pelanggan agar menghapus ulasan negatif.',
+              'Membuat review negatif palsu untuk menjatuhkan kompetitor.',
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Google secara tegas melarang fake engagement dan mewajibkan review mencerminkan pengalaman nyata pengguna. Pelanggaran terhadap kebijakan ini dapat berakibat penghapusan ulasan hingga pembatasan profil bisnis.',
+          },
+        ],
+      },
+      {
+        id: 'etika-bisnis',
+        title: 'Mengapa Termasuk Pelanggaran Etika Bisnis?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Praktik manipulasi review melanggar prinsip dasar etika bisnis, khususnya kejujuran (honesty) dan transparansi (transparency). Ada tiga alasan mendasar mengapa praktik ini tergolong tidak etis:',
+          },
+          {
+            type: 'ol',
+            items: [
+              'Mengganggu hak konsumen untuk memperoleh informasi yang benar dan akurat sebelum mengambil keputusan.',
+              'Menciptakan persaingan usaha yang tidak sehat antara bisnis jujur dan bisnis yang merekayasa reputasi.',
+              'Merusak integritas ekosistem informasi digital secara keseluruhan.',
+            ],
+          },
+          {
+            type: 'quote',
+            text: 'Reputasi yang dibangun dari informasi palsu merupakan bentuk ketidakjujuran digital yang berpotensi menyesatkan publik.',
+          },
+        ],
+      },
+      {
+        id: 'dampak',
+        title: 'Dampak bagi Konsumen dan Bisnis',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Dampak manipulasi review terjadi dua arah dan menimbulkan kerugian yang signifikan:',
+          },
+          {
+            type: 'h3',
+            text: 'Bagi Konsumen',
+          },
+          {
+            type: 'p',
+            text: 'Konsumen dapat mengambil keputusan yang salah karena mempercayai rating yang tidak autentik. Pengalaman aktual sering kali jauh berbeda dengan ekspektasi yang dibangun dari ulasan palsu, sehingga menimbulkan kekecewaan, kerugian materi, bahkan hilangnya kepercayaan terhadap platform digital secara umum.',
+          },
+          {
+            type: 'h3',
+            text: 'Bagi Pelaku Usaha',
+          },
+          {
+            type: 'p',
+            text: 'Pelaku usaha yang membangun reputasi secara jujur dapat dirugikan karena kalah bersaing dengan bisnis yang memanipulasi persepsi digital. Hal ini menciptakan disinsentif bagi pelaku usaha yang berinvestasi pada kualitas produk dan pelayanan sesungguhnya.',
+          },
+        ],
+      },
+      {
+        id: 'regulasi',
+        title: 'Perspektif Regulasi',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Manipulasi review tidak hanya melanggar etika, tetapi juga menyentuh aspek regulasi. Beberapa langkah penegakan yang telah dilakukan antara lain:',
+          },
+          {
+            type: 'list',
+            items: [
+              'Google dapat menghapus review palsu dan memberikan pembatasan terhadap profil bisnis yang melanggar kebijakan.',
+              'Federal Trade Commission (FTC) di Amerika Serikat telah mengeluarkan aturan yang melarang fake reviews dan testimonial palsu, dengan sanksi denda yang signifikan.',
+              'Di Indonesia, Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen melindungi hak konsumen atas informasi yang benar, jelas, dan jujur.',
+            ],
+          },
+          {
+            type: 'highlight',
+            text: 'Regulasi yang ketat menjadi sinyal bahwa kepercayaan digital adalah aset publik yang perlu dilindungi.',
+          },
+        ],
+      },
+      {
+        id: 'argumen',
+        title: 'Argumen dari Perspektif Akademik',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Sebagai mahasiswa Magister Manajemen Pemasaran sekaligus praktisi digital marketing, saya melihat manipulasi review dan rating sebagai bentuk ketidakjujuran digital yang harus dilawan secara struktural maupun kultural.',
+          },
+          {
+            type: 'p',
+            text: 'Review seharusnya menjadi representasi pengalaman nyata konsumen, bukan alat promosi yang direkayasa. Kepercayaan digital merupakan aset jangka panjang yang sangat berharga dan tidak dapat dibangun melalui manipulasi informasi.',
+          },
+          {
+            type: 'quote',
+            text: 'Bisnis yang berfokus pada manipulasi reputasi sedang membangun fondasi rapuh, yang sewaktu-waktu dapat runtuh ketika ekspektasi konsumen tidak terpenuhi.',
+          },
+        ],
+      },
+      {
+        id: 'rekomendasi',
+        title: 'Rekomendasi Etis bagi Pelaku Usaha',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Untuk membangun reputasi digital yang sehat dan berkelanjutan, pelaku usaha dapat menerapkan beberapa prinsip etis berikut:',
+          },
+          {
+            type: 'ol',
+            items: [
+              'Meminta review secara netral tanpa menggiring opini pelanggan.',
+              'Tidak memberikan insentif yang mengikat untuk ulasan positif.',
+              'Menanggapi kritik secara profesional, terbuka, dan tidak defensif.',
+              'Menjadikan review sebagai bahan evaluasi nyata untuk peningkatan kualitas layanan.',
+              'Mengedukasi tim internal mengenai pentingnya kepercayaan digital.',
+            ],
+          },
+          {
+            type: 'p',
+            text: 'Reputasi yang kuat harus dibangun dari kualitas layanan yang nyata, bukan dari rekayasa persepsi.',
+          },
+        ],
+      },
+    ],
+    conclusion:
+      'Manipulasi review dan rating di Google Maps merupakan persoalan etika bisnis yang berdampak pada kepercayaan konsumen, keadilan persaingan usaha, dan integritas informasi digital. Pada akhirnya, kepercayaan konsumen tidak bisa dibeli dengan review palsu. Kepercayaan hanya dapat dibangun melalui kualitas, transparansi, dan kejujuran yang konsisten.',
+    references: [
+      'Google Maps User Generated Content Policy.',
+      'Google Business Profile Help.',
+      'Google Blog tentang fake reviews dan fake business profiles.',
+      'Federal Trade Commission (FTC) Fake Reviews Rule.',
+      'Undang-Undang Nomor 8 Tahun 1999 tentang Perlindungan Konsumen.',
+      'Gryka & Janicki (2023), Applied Sciences.',
+    ],
+  },
+};
 
 export const research = {
   affiliation: 'Digital Marketing Specialist',
