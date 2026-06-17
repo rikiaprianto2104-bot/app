@@ -105,7 +105,7 @@ export const blogPosts = [
     ],
     author: {
       name: 'Riki Aprianto',
-      role: "AI Digital Marketing Specialist & Master's Student in Marketing Management",
+      role: 'AI Digital Marketing Specialist',
     },
   },
   {
