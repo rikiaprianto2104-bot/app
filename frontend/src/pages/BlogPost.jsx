@@ -15,14 +15,14 @@ import {
   ArrowUpRight,
   List as ListIcon,
 } from 'lucide-react';
-import { blogPosts, blogContent } from '../mock';
+import { blogPosts, blogContent, profile } from '../mock';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 
 const Block = ({ block }) => {
   switch (block.type) {
     case 'p':
       return (
-        <p className="text-slate-700 dark:text-slate-300 leading-[1.85] text-[17px]">
+        <p className="text-slate-700 dark:text-slate-300 leading-[1.85] text-[17px] text-justify hyphens-auto">
           {block.text}
         </p>
       );
@@ -248,8 +248,12 @@ const BlogPost = () => {
           {/* Meta */}
           <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#0d9eff] text-white flex items-center justify-center font-semibold">
-                {post.author.name.charAt(0)}
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-slate-900 ring-2 ring-[#0d9eff]/40 flex-shrink-0">
+                <img
+                  src={profile.researchPortrait}
+                  alt={post.author.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <p className="font-semibold text-slate-900 dark:text-white">
@@ -347,7 +351,7 @@ const BlogPost = () => {
             </details>
 
             {/* Intro */}
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 leading-[1.8] font-medium first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:text-[#0d9eff]">
+            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 leading-[1.8] font-medium text-justify hyphens-auto first-letter:text-5xl first-letter:font-bold first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:text-[#0d9eff]">
               {content.intro}
             </p>
 
@@ -390,7 +394,7 @@ const BlogPost = () => {
                 Kesimpulan
               </h2>
               <div className="mt-2 h-1 w-12 rounded-full bg-[#0d9eff]" />
-              <p className="mt-6 text-slate-700 dark:text-slate-300 leading-[1.85] text-[17px]">
+              <p className="mt-6 text-slate-700 dark:text-slate-300 leading-[1.85] text-[17px] text-justify hyphens-auto">
                 {content.conclusion}
               </p>
             </section>
@@ -432,8 +436,12 @@ const BlogPost = () => {
             {/* Author card */}
             <section className="mt-12 p-6 md:p-8 rounded-3xl border border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-white/[0.03]">
               <div className="flex flex-col sm:flex-row gap-5 items-start">
-                <div className="w-16 h-16 rounded-full bg-[#0d9eff] text-white text-2xl font-bold flex items-center justify-center flex-shrink-0">
-                  {post.author.name.charAt(0)}
+                <div className="w-20 h-20 rounded-full overflow-hidden bg-slate-900 ring-4 ring-[#0d9eff]/40 flex-shrink-0">
+                  <img
+                    src={profile.researchPortrait}
+                    alt={post.author.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-wider text-slate-400">
