@@ -13,11 +13,13 @@ export const profile = {
   email: 'me@rikiaprianto.me',
   phone: '+62 888 0923 4347',
   location: 'Indonesia',
-  // Public placeholder portrait illustrations (no real personal photo)
+  // Personal portraits
   avatar:
-    'https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=600&h=600&fit=crop&crop=faces',
+    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/vkhox2p2_RIKI1.png_11zon.jpg',
   heroPortrait:
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&h=1400&fit=crop',
+    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/720wq90i_home-profil.jpg',
+  researchPortrait:
+    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/2ejkzjc6_SHR03739E_11zon.jpg',
 };
 
 export const navItems = [

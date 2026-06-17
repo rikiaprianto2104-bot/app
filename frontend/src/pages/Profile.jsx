@@ -10,7 +10,7 @@ const Profile = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8 py-20">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
             <div className="relative">
-              <div className="w-64 h-80 md:w-72 md:h-96 rounded-[50%] overflow-hidden bg-[#ff8a2b] ring-4 ring-[#0d9eff]/60 shadow-2xl">
+              <div className="w-64 h-80 md:w-72 md:h-96 rounded-[50%] overflow-hidden bg-slate-900 ring-4 ring-[#0d9eff]/60 shadow-2xl">
                 <img
                   src={profile.avatar}
                   alt={profile.name}

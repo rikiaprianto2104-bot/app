@@ -7,9 +7,9 @@ const Research = () => {
     <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
       {/* Header */}
       <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
-        <div className="w-44 h-56 rounded-[50%] overflow-hidden bg-[#ff8a2b] ring-4 ring-[#0d9eff]/60 shadow-xl flex-shrink-0">
+        <div className="w-44 h-56 rounded-[50%] overflow-hidden bg-slate-900 ring-4 ring-[#0d9eff]/60 shadow-xl flex-shrink-0">
           <img
-            src={profile.avatar}
+            src={profile.researchPortrait}
             alt={profile.name}
             className="w-full h-full object-cover"
           />
