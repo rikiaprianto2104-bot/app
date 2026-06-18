@@ -13,13 +13,10 @@ export const profile = {
   email: 'me@rikiaprianto.me',
   phone: '+62 888 0923 4347',
   location: 'Indonesia',
-  // Personal portraits
-  avatar:
-    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/vkhox2p2_RIKI1.png_11zon.jpg',
-  heroPortrait:
-    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/720wq90i_home-profil.jpg',
-  researchPortrait:
-    'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/2ejkzjc6_SHR03739E_11zon.jpg',
+  // Personal portraits (served from /public/assets so they get bundled in the build)
+  avatar: '/assets/riki-profile.jpg',
+  heroPortrait: '/assets/home-portrait.jpg',
+  researchPortrait: '/assets/research-portrait.jpg',
 };
 
 export const navItems = [
@@ -116,7 +113,7 @@ export const achievements = [
       'Awarded as the best graduate for academic excellence and active involvement in campus activities.',
     link: 'https://undira.ac.id/read/115/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/qn0v9i1h_best-graduate-2023.jpg',
+      '/assets/best-graduate-2023.jpg',
   },
   {
     title: 'Runner Up LKTIN RWrC#10 UNY',
@@ -125,7 +122,7 @@ export const achievements = [
       'Achieved second place in a national scientific writing competition held by a prominent state university.',
     link: 'https://undira.ac.id/read/53/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/wbc8ci1i_lktin-rwrc10-2nd-place-2023.jpg',
+      '/assets/lktin-rwrc10-2nd-place-2023.jpg',
   },
   {
     title: 'P2MW Participant',
@@ -134,7 +131,7 @@ export const achievements = [
       'Selected as a participant in the Student Entrepreneurship Program (P2MW) by the Ministry of Education and Culture.',
     link: 'https://www.instagram.com/p/CmVvEVmBLCf/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/zbwoerox_p2mw-ministry-of-education-2022.jpg',
+      '/assets/p2mw-ministry-of-education-2022.jpg',
   },
   {
     title: '3rd Place LKTIN ACCFEST IKOPIN',
@@ -143,7 +140,7 @@ export const achievements = [
       'Secured third place in a national scientific writing competition focused on accounting and finance.',
     link: 'https://www.instagram.com/p/CXi4kM3vnGM/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/kudy3dn7_lktin-accfest-ikopin-3rd-place-2022.jpg',
+      '/assets/lktin-accfest-ikopin-3rd-place-2022.jpg',
   },
   {
     title: 'Gold Medal TEC UNJ',
@@ -152,7 +149,7 @@ export const achievements = [
       'Awarded a gold medal in the Technology Entrepreneurship Competition (TEC) organized by a leading university.',
     link: 'https://www.instagram.com/p/CWfPcpnLsxv/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/nua3x9rz_gold-medal-unj.jpg',
+      '/assets/gold-medal-unj.jpg',
   },
   {
     title: 'KIBM Participant',
@@ -161,7 +158,7 @@ export const achievements = [
       'Participated in the Indonesian Student Entrepreneurship Competition (KIBM) program.',
     link: 'https://www.instagram.com/tv/CGi4i5UASMh/',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/ghi6obka_kibm-ministry-of-education-2020.jpg',
+      '/assets/kibm-ministry-of-education-2020.jpg',
   },
 ];
 
@@ -189,7 +186,7 @@ export const blogPosts = [
     readTime: '7 min read',
     tag: 'Etika Bisnis',
     image:
-      'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/8144n02d_ChatGPT%20Image%2017%20Jun%202026%2C%2020.09.50_11zon.jpg',
+      '/assets/blog-featured-google-maps.jpg',
     keywords: [
       'etika bisnis',
       'manipulasi review',
@@ -275,7 +272,7 @@ export const blogContent = {
     intro:
       'Di era digital, reputasi bisnis tidak hanya dibangun dari kualitas produk atau pelayanan secara langsung, tetapi juga dari jejak digital yang terlihat oleh calon konsumen. Salah satu bentuk jejak digital yang sangat berpengaruh adalah review dan rating di Google Maps. Sebelum seseorang memilih restoran, hotel, bengkel, klinik, toko, atau jasa tertentu, banyak dari mereka melihat rating bintang, membaca komentar pelanggan, lalu menjadikannya sebagai dasar keputusan.',
     inlineImage: {
-      src: 'https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/8144n02d_ChatGPT%20Image%2017%20Jun%202026%2C%2020.09.50_11zon.jpg',
+      src: '/assets/blog-featured-google-maps.jpg',
       caption:
         'Ilustrasi tampilan ulasan bisnis di Google Maps yang menjadi dasar keputusan konsumen.',
     },

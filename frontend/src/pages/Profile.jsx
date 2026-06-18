@@ -61,7 +61,7 @@ const Profile = () => {
               </p>
               <div className="mt-8 flex justify-center md:justify-start">
                 <a
-                  href="https://customer-assets.emergentagent.com/job_auth-removal-deploy/artifacts/yra1ndda_CV_Riki_Aprianto.pdf"
+                  href="/assets/CV_Riki_Aprianto.pdf"
                   download="CV_Riki_Aprianto.pdf"
                   target="_blank"
                   rel="noreferrer"
