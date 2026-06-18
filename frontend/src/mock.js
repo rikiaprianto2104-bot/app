@@ -175,6 +175,35 @@ export const skillsCompetencies = [
 
 export const blogPosts = [
   {
+    id: 4,
+    slug: 'prompt-hacks-ai-template-promosi-customer-service',
+    title:
+      'Prompt Hacks AI: Template Prompt untuk Membuat Konten Bisnis Lebih Cepat dan Menarik',
+    metaTitle:
+      'Prompt Hacks AI: Template Prompt untuk Deskripsi Produk, Video Promosi, dan Customer Service',
+    excerpt:
+      'Pelajari prompt hacks AI yang bisa digunakan untuk membuat deskripsi produk, skrip video promosi, dan balasan customer service secara cepat, menarik, dan profesional.',
+    date: 'Jul 04, 2026',
+    dateISO: '2026-07-04',
+    readTime: '10 min read',
+    tag: 'AI untuk Bisnis',
+    image: '/assets/blog-prompt-hacks-ai.jpg',
+    keywords: [
+      'prompt hacks AI',
+      'template prompt AI',
+      'prompt untuk deskripsi produk',
+      'prompt AI untuk promosi',
+      'prompt customer service AI',
+      'cara menggunakan AI untuk bisnis',
+      'AI marketing',
+      'digital marketing',
+    ],
+    author: {
+      name: 'Riki Aprianto',
+      role: 'AI Digital Marketing Specialist',
+    },
+  },
+  {
     id: 1,
     slug: 'manipulasi-review-rating-google-maps-etika-bisnis',
     title:
@@ -268,6 +297,365 @@ export const blogPosts = [
 // Each section has id (used for TOC and anchor), heading, and a list of blocks.
 // Block types: 'p' (paragraph), 'list', 'ol', 'quote', 'highlight', 'image', 'h3'.
 export const blogContent = {
+  'prompt-hacks-ai-template-promosi-customer-service': {
+    intro:
+      'Di era digital saat ini, penggunaan Artificial Intelligence (AI) semakin banyak membantu pelaku bisnis dalam membuat konten. Mulai dari menulis deskripsi produk, membuat skrip video promosi, menyusun caption media sosial, hingga membalas pesan pelanggan — semuanya bisa dilakukan dengan lebih cepat menggunakan AI. Namun, hasil dari AI sangat bergantung pada cara kita memberikan perintah atau yang biasa disebut prompt. Semakin jelas dan spesifik prompt yang diberikan, semakin baik pula hasil yang akan dihasilkan oleh AI. Artikel ini membahas berbagai prompt hacks AI dan template prompt yang bisa digunakan untuk kebutuhan bisnis, terutama untuk membuat deskripsi produk, skrip video promosi, dan balasan customer service.',
+    sections: [
+      {
+        id: 'apa-itu-prompt',
+        title: 'Apa Itu Prompt dalam AI?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Prompt adalah instruksi atau perintah yang kita berikan kepada AI agar AI memahami apa yang ingin kita hasilkan. Prompt yang umum digunakan biasanya masih sangat sederhana, padahal hasil AI akan jauh lebih baik jika prompt-nya lebih detail.',
+          },
+          {
+            type: 'example',
+            title: 'Contoh Prompt yang Lebih Baik',
+            text: '"Buatkan deskripsi produk untuk blouse wanita berbahan katun premium, warna putih, cocok untuk kerja dan acara santai. Gunakan gaya bahasa elegan, persuasif, dan maksimal 100 kata."',
+          },
+          {
+            type: 'p',
+            text: 'Dengan prompt yang lebih detail, AI akan lebih mudah memahami konteks, target audiens, gaya bahasa, manfaat produk, dan tujuan konten.',
+          },
+        ],
+      },
+      {
+        id: 'mengapa-penting',
+        title: 'Mengapa Prompt Hacks Penting untuk Bisnis?',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Banyak pelaku bisnis sudah menggunakan AI, tetapi belum semua mendapatkan hasil yang maksimal. Salah satu penyebabnya adalah prompt yang digunakan masih terlalu singkat dan kurang jelas. Padahal dengan prompt hacks yang tepat, AI dapat memberikan banyak manfaat bagi bisnis.',
+          },
+          {
+            type: 'list',
+            items: [
+              'Menghemat waktu pembuatan konten karena AI membantu membuat draft dalam hitungan detik.',
+              'Meningkatkan kualitas komunikasi bisnis melalui teks yang lebih rapi, persuasif, dan sesuai karakter brand.',
+              'Membantu meningkatkan penjualan karena deskripsi, caption, dan skrip promosi menjadi lebih menarik.',
+              'Mempercepat respon customer service dengan balasan yang sopan, profesional, dan tetap ramah.',
+              'Menjaga konsistensi gaya bahasa brand di berbagai platform digital.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'struktur-prompt',
+        title: 'Struktur Prompt yang Efektif',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Agar hasil AI lebih sesuai dengan kebutuhan, gunakan struktur prompt berikut sebagai panduan.',
+          },
+          { type: 'h3', text: '1. Jelaskan Peran AI' },
+          {
+            type: 'p',
+            text: 'Berikan peran tertentu kepada AI agar jawaban yang dihasilkan lebih terarah, misalnya: "Bertindaklah sebagai copywriter profesional untuk brand fashion wanita."',
+          },
+          { type: 'h3', text: '2. Jelaskan Tujuan Konten' },
+          {
+            type: 'p',
+            text: 'Tentukan tujuan utama dari konten yang ingin dibuat, misalnya meningkatkan minat beli pelanggan atau memperkuat brand awareness.',
+          },
+          { type: 'h3', text: '3. Jelaskan Produk atau Layanan' },
+          {
+            type: 'p',
+            text: 'Masukkan informasi detail mengenai produk, layanan, keunggulan, harga, bahan, ukuran, target pasar, atau manfaat utama.',
+          },
+          { type: 'h3', text: '4. Tentukan Target Audiens' },
+          {
+            type: 'p',
+            text: 'AI perlu mengetahui siapa target pembaca atau calon pelanggan agar bahasa dan pesan yang digunakan lebih tepat.',
+          },
+          { type: 'h3', text: '5. Tentukan Gaya Bahasa' },
+          {
+            type: 'p',
+            text: 'Gaya bahasa sangat penting agar konten sesuai dengan karakter brand, misalnya profesional, elegan, friendly, santai, atau premium.',
+          },
+          { type: 'h3', text: '6. Tentukan Format Output' },
+          {
+            type: 'p',
+            text: 'Agar hasilnya rapi, tentukan format yang diinginkan, seperti 3 paragraf pendek, bullet point, tabel, headline, atau caption.',
+          },
+        ],
+      },
+      {
+        id: 'template-deskripsi-produk',
+        title: 'Template Prompt AI untuk Membuat Deskripsi Produk',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Deskripsi produk yang baik tidak hanya menjelaskan fitur, tetapi juga menunjukkan manfaat dan alasan mengapa pelanggan perlu membelinya.',
+          },
+          {
+            type: 'prompt',
+            title: 'Template Prompt — Deskripsi Produk',
+            text: `Bertindaklah sebagai copywriter e-commerce profesional. Buatkan deskripsi produk untuk [nama produk].
+
+Detail produk:
+- Jenis produk: [isi jenis produk]
+- Bahan: [isi bahan produk]
+- Warna: [isi warna produk]
+- Keunggulan utama: [isi keunggulan]
+- Target pembeli: [isi target audiens]
+- Kesan yang ingin ditampilkan: [elegan/lucu/premium/minimalis/profesional]
+
+Buat deskripsi produk yang menarik, persuasif, mudah dipahami, dan mendorong pembaca untuk membeli. Gunakan maksimal 150 kata. Tambahkan juga 3 bullet point keunggulan produk.`,
+          },
+          {
+            type: 'example',
+            title: 'Contoh Hasil Deskripsi Produk',
+            text: `Luna Blouse hadir untuk Anda yang ingin tampil elegan tanpa mengorbankan kenyamanan. Dibuat dari bahan katun premium yang lembut dan adem, blouse ini cocok digunakan untuk aktivitas kerja, meeting, hingga acara santai bersama teman.
+
+Dengan desain minimalis dan pilihan warna netral seperti putih, hitam, dan beige, Luna Blouse mudah dipadukan dengan berbagai outfit favorit Anda.
+
+• Bahan katun premium yang nyaman dan tidak panas.
+• Desain elegan untuk tampilan profesional.
+• Cocok digunakan untuk kerja maupun acara santai.`,
+          },
+        ],
+      },
+      {
+        id: 'template-skrip-video',
+        title: 'Template Prompt AI untuk Membuat Skrip Video Promosi',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Video promosi sangat efektif untuk menarik perhatian calon pelanggan, terutama di platform seperti TikTok, Instagram Reels, YouTube Shorts, dan Facebook. Skrip video yang baik biasanya memiliki hook, isi utama, dan call to action.',
+          },
+          {
+            type: 'prompt',
+            title: 'Template Prompt — Skrip Video Promosi',
+            text: `Bertindaklah sebagai content strategist dan scriptwriter video pendek. Buatkan skrip video promosi untuk [nama produk/layanan].
+
+Detail produk/layanan:
+- Produk/layanan: [isi produk]
+- Target audiens: [isi target audiens]
+- Masalah audiens: [isi masalah]
+- Solusi dari produk: [isi solusi]
+- Keunggulan utama: [isi keunggulan]
+- Platform: [TikTok/Instagram Reels/YouTube Shorts]
+- Durasi video: [15/30/60 detik]
+
+Buat skrip dengan struktur:
+1. Hook pembuka yang menarik
+2. Isi video yang menjelaskan masalah dan solusi
+3. Call to Action di akhir
+
+Gunakan bahasa yang natural, singkat, dan mudah dipahami.`,
+          },
+          {
+            type: 'example',
+            title: 'Contoh Hasil Skrip Video Promosi',
+            text: `Hook: Kulit wajah terlihat kusam walaupun sudah pakai skincare setiap hari?
+
+Isi: Mungkin kulit Anda butuh serum yang ringan, mudah menyerap, dan bisa membantu wajah terlihat lebih cerah. Glow Bright Serum hadir untuk membantu menjaga kelembapan kulit sekaligus membuat tampilan wajah lebih fresh dan sehat.
+
+Call to Action: Coba Glow Bright Serum sekarang dan rasakan kulit yang tampak lebih cerah setiap hari. Klik link di bio untuk order.`,
+          },
+        ],
+      },
+      {
+        id: 'template-customer-service',
+        title: 'Template Prompt AI untuk Membuat Balasan Customer Service',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Customer service adalah bagian penting dalam menjaga kepuasan pelanggan. AI dapat membantu membuat balasan yang sopan, ramah, dan sesuai konteks.',
+          },
+          {
+            type: 'prompt',
+            title: 'Template Prompt — Balasan Customer Service',
+            text: `Bertindaklah sebagai customer service profesional untuk brand [nama brand]. Buatkan balasan untuk pelanggan dengan situasi berikut:
+
+Situasi pelanggan: [jelaskan masalah pelanggan]
+
+Tujuan balasan:
+- Menjawab pertanyaan pelanggan dengan jelas
+- Menunjukkan empati
+- Memberikan solusi
+- Menjaga pelanggan tetap merasa dihargai
+
+Gunakan bahasa yang sopan, ramah, profesional, dan tidak terlalu kaku. Buat maksimal 2 paragraf.`,
+          },
+          {
+            type: 'example',
+            title: 'Contoh Hasil Balasan Customer Service',
+            text: `Halo Kak, mohon maaf atas ketidaknyamanan yang Kakak alami. Kami memahami bahwa ukuran produk yang tidak sesuai tentu membuat pengalaman belanja menjadi kurang nyaman.
+
+Kakak bisa mengajukan penukaran produk dengan mengirimkan foto produk, label ukuran, dan nomor pesanan melalui chat ini. Setelah data kami terima, tim kami akan membantu proses pengecekan dan memberikan instruksi penukaran selanjutnya.`,
+          },
+        ],
+      },
+      {
+        id: 'prompt-caption',
+        title: 'Prompt Hacks untuk Membuat Caption Media Sosial',
+        blocks: [
+          {
+            type: 'prompt',
+            title: 'Template Prompt — Caption Instagram',
+            text: `Bertindaklah sebagai social media specialist. Buatkan caption Instagram untuk [nama produk/layanan].
+
+Detail konten:
+- Tujuan caption: [awareness/promosi/edukasi/soft selling/hard selling]
+- Target audiens: [isi target audiens]
+- Keunggulan produk: [isi keunggulan]
+- Gaya bahasa: [friendly/profesional/elegan/santai]
+- Call to Action: [isi CTA]
+
+Buat caption yang menarik, tidak terlalu panjang, dan tambahkan 5 hashtag relevan.`,
+          },
+          {
+            type: 'example',
+            title: 'Contoh Hasil Caption',
+            text: 'Tampil profesional bukan berarti harus ribet. Tas kerja ini hadir dengan desain elegan, ruang penyimpanan luas, dan cukup untuk membawa laptop, dokumen, serta kebutuhan harian Anda. Cocok untuk menemani aktivitas kerja, meeting, hingga perjalanan bisnis. Klik link di bio untuk lihat koleksi lengkapnya.',
+          },
+        ],
+      },
+      {
+        id: 'prompt-ide-konten',
+        title: 'Prompt Hacks untuk Membuat Ide Konten Harian',
+        blocks: [
+          {
+            type: 'prompt',
+            title: 'Template Prompt — Ide Konten Harian',
+            text: `Bertindaklah sebagai content planner untuk brand [jenis bisnis]. Buatkan 30 ide konten Instagram untuk target audiens [target audiens].
+
+Kategori konten harus mencakup:
+- Edukasi
+- Promosi
+- Testimoni
+- Behind the scene
+- Tips praktis
+- Soft selling
+
+Buat dalam bentuk tabel dengan kolom: Hari, Tema Konten, Judul Konten, Format Konten, dan Tujuan Konten.`,
+          },
+        ],
+      },
+      {
+        id: 'kesalahan-umum',
+        title: 'Kesalahan Umum Saat Membuat Prompt AI',
+        blocks: [
+          {
+            type: 'list',
+            items: [
+              'Prompt terlalu umum, misalnya hanya menulis: "Buatkan caption jualan."',
+              'Tidak memberikan target audiens sehingga hasil tulisan kurang tepat sasaran.',
+              'Tidak menentukan gaya bahasa sehingga output AI bisa terlalu formal atau terlalu santai.',
+              'Tidak memberikan informasi produk yang cukup, seperti bahan, manfaat, harga, ukuran, dan keunggulan.',
+              'Tidak meminta variasi hasil, padahal AI bisa membuat beberapa alternatif headline, caption, atau CTA.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'formula-prompt',
+        title: 'Formula Prompt AI yang Bisa Digunakan untuk Banyak Kebutuhan',
+        blocks: [
+          {
+            type: 'p',
+            text: 'Gunakan formula universal ini sebagai kerangka untuk hampir semua kebutuhan konten bisnis.',
+          },
+          {
+            type: 'prompt',
+            title: 'Formula Universal Prompt AI',
+            text: `Bertindaklah sebagai [peran]. Saya ingin membuat [jenis konten]. Tujuan konten ini adalah [tujuan]. Target audiensnya adalah [target audiens]. Produk/layanan yang dipromosikan adalah [detail produk/layanan]. Keunggulan utamanya adalah [keunggulan]. Gunakan gaya bahasa [gaya bahasa]. Buat dalam format [format output]. Tambahkan CTA [ajakan tindakan].`,
+          },
+        ],
+      },
+      {
+        id: 'tips-hasil-bagus',
+        title: 'Tips Agar Hasil AI Lebih Bagus',
+        blocks: [
+          {
+            type: 'list',
+            items: [
+              'Gunakan instruksi yang jelas dan spesifik.',
+              'Masukkan detail produk atau layanan selengkap mungkin.',
+              'Tentukan gaya bahasa brand agar hasil lebih konsisten.',
+              'Minta beberapa alternatif hasil agar memiliki lebih banyak pilihan.',
+              'Edit ulang hasil AI sebelum dipublikasikan agar tetap sesuai fakta dan karakter brand.',
+              'Gunakan AI sebagai asisten, bukan pengganti strategi bisnis.',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'paket-prompt',
+        title: 'Contoh Paket Prompt Siap Pakai untuk Bisnis',
+        blocks: [
+          { type: 'h3', text: 'Prompt untuk Headline Promosi' },
+          {
+            type: 'prompt',
+            title: 'Headline Promosi',
+            text: 'Buatkan 10 headline promosi untuk produk [nama produk]. Target audiensnya adalah [target audiens]. Gunakan gaya bahasa persuasif, singkat, dan menarik perhatian. Fokuskan pada manfaat utama produk yaitu [manfaat utama].',
+          },
+          { type: 'h3', text: 'Prompt untuk Soft Selling' },
+          {
+            type: 'prompt',
+            title: 'Soft Selling',
+            text: 'Buatkan konten soft selling untuk produk [nama produk]. Mulailah dengan masalah yang sering dialami target audiens, lalu jelaskan solusi secara natural tanpa terlihat terlalu menjual. Gunakan gaya bahasa edukatif dan ramah.',
+          },
+          { type: 'h3', text: 'Prompt untuk Hard Selling' },
+          {
+            type: 'prompt',
+            title: 'Hard Selling',
+            text: 'Buatkan copywriting hard selling untuk produk [nama produk]. Tekankan manfaat utama, promo terbatas, urgensi, dan ajakan membeli sekarang. Gunakan gaya bahasa persuasif tetapi tetap profesional.',
+          },
+          { type: 'h3', text: 'Prompt untuk Testimoni' },
+          {
+            type: 'prompt',
+            title: 'Testimoni',
+            text: 'Ubah testimoni pelanggan berikut menjadi konten promosi yang menarik: [masukkan testimoni]. Buat dalam gaya bahasa natural, meyakinkan, dan cocok untuk caption Instagram.',
+          },
+          { type: 'h3', text: 'Prompt untuk FAQ Produk' },
+          {
+            type: 'prompt',
+            title: 'FAQ Produk',
+            text: 'Buatkan daftar FAQ untuk produk [nama produk]. Sertakan pertanyaan yang sering ditanyakan pelanggan mengenai harga, ukuran, bahan, cara pemakaian, pengiriman, garansi, dan proses pemesanan. Berikan jawaban yang jelas dan ramah.',
+          },
+        ],
+      },
+      {
+        id: 'faq',
+        title: 'FAQ Seputar Prompt Hacks AI',
+        blocks: [
+          { type: 'h3', text: '1. Apakah AI bisa menggantikan copywriter?' },
+          {
+            type: 'p',
+            text: 'AI dapat membantu mempercepat pekerjaan copywriter, tetapi tidak sepenuhnya menggantikan peran manusia. Copywriter tetap dibutuhkan untuk memahami strategi, emosi pelanggan, positioning brand, dan memastikan konten sesuai tujuan bisnis.',
+          },
+          { type: 'h3', text: '2. Apakah prompt AI harus panjang?' },
+          {
+            type: 'p',
+            text: 'Tidak selalu. Prompt tidak harus panjang, tetapi harus jelas. Prompt yang singkat namun spesifik biasanya lebih efektif daripada prompt panjang tetapi tidak terarah.',
+          },
+          { type: 'h3', text: '3. Apakah hasil AI bisa langsung dipublikasikan?' },
+          {
+            type: 'p',
+            text: 'Sebaiknya hasil AI tetap diperiksa dan diedit sebelum dipublikasikan. Pastikan informasi produk benar, tidak berlebihan, tidak menyesatkan, dan sesuai karakter brand.',
+          },
+          { type: 'h3', text: '4. Bisnis apa saja yang bisa menggunakan prompt AI?' },
+          {
+            type: 'p',
+            text: 'Hampir semua bisnis bisa menggunakan prompt AI, seperti fashion, makanan, skincare, jasa digital, pendidikan, properti, hospitality, retail, dan UMKM.',
+          },
+          { type: 'h3', text: '5. Apa prompt terbaik untuk membuat konten promosi?' },
+          {
+            type: 'p',
+            text: 'Prompt terbaik adalah prompt yang menjelaskan produk, target audiens, tujuan konten, manfaat utama, gaya bahasa, dan format output yang diinginkan.',
+          },
+        ],
+      },
+    ],
+    conclusion:
+      'Prompt hacks AI dapat membantu bisnis membuat konten dengan lebih cepat, rapi, dan efektif. Dengan prompt yang tepat, AI bisa digunakan untuk membuat deskripsi produk, skrip video promosi, caption media sosial, ide konten, hingga balasan customer service. Kunci utama dalam menggunakan AI adalah memberikan instruksi yang jelas, spesifik, dan sesuai dengan tujuan bisnis. Semakin lengkap informasi yang diberikan, semakin baik pula hasil yang dihasilkan oleh AI. Namun, AI tetap perlu digunakan secara bijak. Jadikan AI sebagai asisten untuk mempercepat proses kreatif, sementara strategi, validasi, dan keputusan akhir tetap berada di tangan manusia.',
+    cta:
+      'Ingin membuat konten bisnis lebih cepat dan profesional dengan bantuan AI? Mulailah gunakan template prompt di atas untuk membuat deskripsi produk, skrip video promosi, caption media sosial, dan balasan customer service yang lebih menarik. Gunakan AI bukan hanya untuk membuat konten lebih cepat, tetapi juga untuk membantu bisnis Anda tampil lebih konsisten, relevan, dan dipercaya oleh pelanggan.',
+  },
+
   'manipulasi-review-rating-google-maps-etika-bisnis': {
     intro:
       'Di era digital, reputasi bisnis tidak hanya dibangun dari kualitas produk atau pelayanan secara langsung, tetapi juga dari jejak digital yang terlihat oleh calon konsumen. Salah satu bentuk jejak digital yang sangat berpengaruh adalah review dan rating di Google Maps. Sebelum seseorang memilih restoran, hotel, bengkel, klinik, toko, atau jasa tertentu, banyak dari mereka melihat rating bintang, membaca komentar pelanggan, lalu menjadikannya sebagai dasar keputusan.',

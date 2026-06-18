@@ -14,9 +14,55 @@ import {
   ArrowRight,
   ArrowUpRight,
   List as ListIcon,
+  Terminal,
+  Sparkles,
+  Copy,
 } from 'lucide-react';
 import { blogPosts, blogContent, profile } from '../mock';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
+
+const PromptBlock = ({ title, text }) => {
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (_) {}
+  };
+  return (
+    <div className="my-6 rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/[0.04]">
+      <div className="flex items-center justify-between gap-3 px-5 py-3 border-b border-slate-200 dark:border-white/10 bg-white/60 dark:bg-white/[0.02]">
+        <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#0d9eff]">
+          <Terminal size={14} />
+          {title || 'Template Prompt'}
+        </span>
+        <button
+          onClick={copy}
+          className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-300 hover:text-[#0d9eff] transition-colors"
+        >
+          {copied ? <Check size={14} /> : <Copy size={14} />}
+          {copied ? 'Tersalin' : 'Salin'}
+        </button>
+      </div>
+      <pre className="px-5 py-4 text-[14px] md:text-[15px] leading-[1.7] text-slate-700 dark:text-slate-200 whitespace-pre-wrap font-mono">
+        {text}
+      </pre>
+    </div>
+  );
+};
+
+const ExampleBlock = ({ title, text }) => (
+  <div className="my-6 rounded-2xl border border-[#0d9eff]/20 bg-[#eaf6ff]/60 dark:bg-[#0d9eff]/[0.08] p-5">
+    <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#0d9eff]">
+      <Sparkles size={14} />
+      {title || 'Contoh Hasil'}
+    </div>
+    <div className="mt-3 text-[15px] md:text-base leading-[1.8] text-slate-800 dark:text-slate-100 whitespace-pre-line">
+      {text}
+    </div>
+  </div>
+);
 
 const Block = ({ block }) => {
   switch (block.type) {
@@ -32,6 +78,10 @@ const Block = ({ block }) => {
           {block.text}
         </h3>
       );
+    case 'prompt':
+      return <PromptBlock title={block.title} text={block.text} />;
+    case 'example':
+      return <ExampleBlock title={block.title} text={block.text} />;
     case 'list':
       return (
         <ul className="space-y-3 my-2">
@@ -468,9 +518,8 @@ const BlogPost = () => {
                   Mari berdiskusi lebih lanjut
                 </h3>
                 <p className="mt-3 text-white/90 leading-relaxed max-w-xl">
-                  Tertarik berdiskusi tentang etika bisnis, digital marketing,
-                  atau transformasi digital? Hubungi saya melalui halaman
-                  Contact.
+                  {content.cta ||
+                    'Tertarik berdiskusi tentang etika bisnis, digital marketing, atau transformasi digital? Hubungi saya melalui halaman Contact.'}
                 </p>
                 <Link
                   to="/contact"
