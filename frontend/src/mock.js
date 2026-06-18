@@ -244,7 +244,7 @@ export const blogPosts = [
     readTime: '6 min read',
     tag: 'GEO',
     image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
+      '/assets/blog-geo-search.jpg',
     keywords: [
       'GEO',
       'Generative Engine Optimization',
@@ -273,7 +273,7 @@ export const blogPosts = [
     readTime: '8 min read',
     tag: 'AI Marketing',
     image:
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=675&fit=crop',
+      '/assets/blog-ai-workflows.jpg',
     keywords: [
       'AI marketing',
       'content workflow',
@@ -1186,7 +1186,7 @@ export const projects = [
       'Built a programmatic SEO engine that scaled an e-commerce site from 12k to 240k monthly organic sessions in 9 months.',
     tags: ['SEO', 'Content Ops', 'Analytics'],
     image:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=600&fit=crop',
+      '/assets/project-seo.jpg',
   },
   {
     id: 2,
@@ -1196,7 +1196,7 @@ export const projects = [
       'An internal LLM-powered content studio that produces SEO briefs, drafts, and on-brand variations at scale.',
     tags: ['LLM', 'Workflow', 'Editorial'],
     image:
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&h=600&fit=crop',
+      '/assets/project-ai-studio.jpg',
   },
   {
     id: 3,
@@ -1206,7 +1206,7 @@ export const projects = [
       'A dashboard that tracks how a brand appears across ChatGPT, Perplexity, and Google AI Overviews.',
     tags: ['GEO', 'Dashboard', 'AI Search'],
     image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop',
+      '/assets/project-geo-tracker.jpg',
   },
   {
     id: 4,
@@ -1216,7 +1216,7 @@ export const projects = [
       'Multi-touch attribution model unifying paid, organic, and social channels for a DTC brand.',
     tags: ['Attribution', 'BigQuery', 'GA4'],
     image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop',
+      '/assets/project-attribution.jpg',
   },
   {
     id: 5,
@@ -1226,7 +1226,7 @@ export const projects = [
       'Applied UTAUT2 to explain how TikTok Shop influences consumer behavior across age cohorts.',
     tags: ['Research', 'Consumer Behavior'],
     image:
-      'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=900&h=600&fit=crop',
+      '/assets/project-tiktok.jpg',
   },
   {
     id: 6,
@@ -1236,7 +1236,7 @@ export const projects = [
       'Integrated campaign mixing creator partnerships and paid social, lifting branded search by 64%.',
     tags: ['Campaign', 'Branding'],
     image:
-      'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&h=600&fit=crop',
+      '/assets/project-brand-campaign.jpg',
   },
 ];
 
