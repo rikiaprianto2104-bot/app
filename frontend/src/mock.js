@@ -183,8 +183,8 @@ export const blogPosts = [
       'Prompt Hacks AI: Template Prompt untuk Deskripsi Produk, Video Promosi, dan Customer Service',
     excerpt:
       'Pelajari prompt hacks AI yang bisa digunakan untuk membuat deskripsi produk, skrip video promosi, dan balasan customer service secara cepat, menarik, dan profesional.',
-    date: 'Jul 04, 2026',
-    dateISO: '2026-07-04',
+    date: 'Jun 18, 2026',
+    dateISO: '2026-06-18',
     readTime: '10 min read',
     tag: 'AI untuk Bisnis',
     image: '/assets/blog-prompt-hacks-ai.jpg',
